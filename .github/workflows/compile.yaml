@@ -1,0 +1,29 @@
+name: Compile CV
+run-name: ${{ github.actor }} compiling CV 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🟢 Começando."
+      - name: Fazendo Checkout
+        uses: actions/checkout@v3
+        with:
+          repo-token: ${{ secrets.GH_TOKEN }}
+      - run: echo "💡 ${{ github.repository }} was cloned."
+      - uses: docker://rstropek/pandoc-latex
+        with:
+          args: "index.md --template template.latex -o cv.pdf" # gets appended to pandoc command
+#    
+      - run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          git add .
+          git commit -m "CV Added"
+          
+          git clone https://flaviojmendes:${{secrets.GH_TOKEN}}@github.com/flaviojmendes/cv.git
+          cp book.pdf ebook/ -f
+          cd ebook
+          git add .
+          git commit -m "CV Compiled"
+          git push
