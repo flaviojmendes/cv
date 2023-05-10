@@ -22,8 +22,8 @@ jobs:
           git commit -m "CV Added"
           
           git clone https://flaviojmendes:${{secrets.GH_TOKEN}}@github.com/flaviojmendes/cv.git
-          cp book.pdf ebook/ -f
-          cd ebook
+          cp cv.pdf cv/ -f
+          cd cv
           git add .
           git commit -m "CV Compiled"
           git push
