@@ -8,7 +8,7 @@ Nationalities: Portugal and Brazil
 
 _______________________________________________
 
-**	**
+**Summary**
 
 I am a Developer with 14 years of experience in Financial and Telecom companies. For all these years my main role was developing Java applications with frameworks like Spring Boot, using JUnit for TDD and JMeter for performance tests. On the Frontend worked with React and Angular. Also worked with infrastructure tools such as Docker, Kubernetes and Rancher. For service provisioning used Google Cloud and AWS. Also contributed with CI and CD for several projects using Git, Jenkins, SonarQube.
 
