@@ -1,6 +1,6 @@
 **Flávio Jorge Mendes**
 
-+3530000000000 | [flaviojmendes@gmail.com](mailto:flaviojmendes@gmail.com)
++353000000000 | [flaviojmendes@gmail.com](mailto:flaviojmendes@gmail.com)
 
 http://linkedin.com/in/flaviojmendes
 
